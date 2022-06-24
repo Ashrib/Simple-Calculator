@@ -1,0 +1,76 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #27242485;
+}
+#cal-body{
+    background-color: rgb(20, 18, 18);
+    width: 380px;
+    height: 400px;
+    border: 1px solid #cccccc;
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+#screen{
+    background-color:rgba(255, 255, 255, 0.712);
+    color: black;
+    font-size: 2em;
+    width: 90%;
+    height: 15%;
+    margin: auto;
+    margin-top: 15px;
+    padding-right: 10px;
+    text-align: right;
+    overflow-x: scroll;
+    border: 3px solid white;
+}
+#screen::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+}
+#screen::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 30px;
+}
+#all-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    margin-top: 6px;
+}
+.del{
+    color: white;
+    background-color: rgba(250, 44, 44, 0.411);
+}
+.del:hover{
+    background-color: red;
+}
+.operator{
+    color: rgb(255, 136, 0);
+}
+.equal-sign{
+    grid-column: 1 / span 3;
+    background-color: rgba(53, 152, 245, 0.178);
+}
+.equal-sign:hover{
+    background-color: rgba(0, 132, 255, 0.37);
+}
+.zero{
+    grid-column: 1 / span 2;
+}
+button{
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 3px;
+    border: none;
+    font-size: 1.8em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.479);
+}
