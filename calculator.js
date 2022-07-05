@@ -64,8 +64,7 @@ function equal() {
     screen(value)
 };
 function remove() {
-    var value = ""
-    screen(value)
+    var value = document.getElementById("screen").innerText = null;
 };
 function screen(v) {
     if (v === "=") {
@@ -73,9 +72,6 @@ function screen(v) {
         let data = inputData.innerText;
         let result = eval(data);
         document.getElementById("screen").innerText = result;
-    } 
-    else if(v === ""){
-        document.getElementById("screen").innerText = null;
     }
     else {
         document.getElementById("screen").innerText += v;
